@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mentree</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <h1 class="text-center">Mentree</h1>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 text-center">
+        <button> Visual Map </button>
+        <button> Iterate </button>
+        <button> Test Me </button>
+        <button> About </button>
+      <div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 main_content">
+      <%=yield%>
+    </div>
+  </div>
+
+</body>
+</html>
