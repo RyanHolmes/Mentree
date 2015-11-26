@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<% @map_nodes.each do |map_node| %>
+  <div class="node_container">
+    <h4 class="node_title"><%= map_node.title %></h4>
+    <%if map_node.content.present?%>
+      <%= map_node.content %>
+    <%end%>
+    <!-- <button><%= link_to 'Show', map_node %></button> -->
+    <%if map_node.title != "Root"%>
+      <button><%= link_to 'Edit', edit_map_node_path(map_node) %></button>
+      <button><%= link_to 'Destroy', map_node, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+      <br>
+    <%end%>
+    <button><%= link_to 'Add Node?', new_map_node_path(map_node) %></button>
+    <br>
+  </div>
+<% end %>

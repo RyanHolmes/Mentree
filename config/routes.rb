@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :map_nodes
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

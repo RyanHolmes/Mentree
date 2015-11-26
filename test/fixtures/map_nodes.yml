@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  degree: 1
+  title: MyString
+  content: MyText
+  rating: 1
+  audio_path: MyString
+  path: MyString
+
+two:
+  degree: 1
+  title: MyString
+  content: MyText
+  rating: 1
+  audio_path: MyString
+  path: MyString
