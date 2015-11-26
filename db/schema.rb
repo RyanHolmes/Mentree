@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124232422) do
+ActiveRecord::Schema.define(version: 20151126002832) do
 
   create_table "map_nodes", force: :cascade do |t|
     t.integer  "degree",     limit: 4
@@ -22,6 +22,9 @@ ActiveRecord::Schema.define(version: 20151124232422) do
     t.string   "path",       limit: 255
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.string   "ancestry",   limit: 255
   end
+
+  add_index "map_nodes", ["ancestry"], name: "index_map_nodes_on_ancestry", using: :btree
 
 end

@@ -14,7 +14,7 @@ class MapNodesController < ApplicationController
 
   # GET /map_nodes/new
   def new
-    @map_node = MapNode.new
+    @map_node = MapNode.new(params[:parent_id])
   end
 
   # GET /map_nodes/1/edit
